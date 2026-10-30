@@ -1,0 +1,182 @@
+/* PALETA DE COLORES - TEMA AZUL PROFUNDO Y NEÓN */
+:root {
+    --bg-dark-blue: #060d19;
+    --bg-card-blue: rgba(13, 27, 52, 0.85);
+    --accent-cyan: #38bdf8;
+    --accent-blue: #2563eb;
+    --text-primary: #f8fafc;
+    --text-muted: #94a3b8;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-dark-blue);
+    color: var(--text-primary);
+    padding-top: 75px;
+}
+
+/* NAVBAR */
+.bg-custom-navbar {
+    background: rgba(6, 13, 25, 0.95) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.navbar-nav .nav-link {
+    color: #cbd5e1 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-cyan) !important;
+}
+
+/* TÍTULOS DE SECCIÓN */
+.section-title {
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+.section-title::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-cyan));
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+/* TARJETAS Y CONTENEDORES */
+.custom-card, .bg-glass, .quote-card-aesthetic {
+    background: var(--bg-card-blue) !important;
+    border: 1px solid rgba(56, 189, 248, 0.2) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-cyan) !important;
+    box-shadow: 0 15px 35px rgba(56, 189, 248, 0.2) !important;
+}
+
+.text-secondary-custom {
+    color: #cbd5e1 !important;
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+.icon-box {
+    background-color: rgba(56, 189, 248, 0.15) !important;
+    color: var(--accent-cyan) !important;
+    width: 70px;
+    height: 70px;
+}
+
+/* CARRUSEL DE MÚSICA */
+.music-card-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid var(--accent-cyan);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+.bg-blue-soft {
+    background-color: rgba(37, 99, 235, 0.3) !important;
+    color: var(--accent-cyan) !important;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+/* TABLA DE VIDEOJUEGOS MEJORADA */
+.custom-table {
+    color: var(--text-primary) !important;
+    background-color: var(--bg-card-blue);
+}
+
+.table-blue-custom {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%) !important;
+    border-bottom: 2px solid var(--accent-cyan) !important;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.custom-table tbody tr {
+    border-color: rgba(56, 189, 248, 0.1);
+    transition: all 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+    background-color: rgba(56, 189, 248, 0.08) !important;
+    box-shadow: inset 4px 0 0 var(--accent-cyan);
+}
+
+.game-thumbnail {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid var(--accent-cyan);
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.game-thumbnail:hover {
+    transform: scale(1.08);
+}
+
+/* BOTONES */
+.btn-primary-custom {
+    background: linear-gradient(135deg, #0284c7 0%, #1d4ed8 100%);
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+    color: #fff;
+}
+
+/* FOOTER */
+.bg-custom-footer {
+    background: #020617 !important;
+    border-top: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.social-icon-btn {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--accent-cyan);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.social-icon-btn:hover {
+    transform: translateY(-5px);
+    color: #ffffff;
+    box-shadow: 0 0 15px var(--accent-cyan);
+}
+
+.social-icon-btn.instagram:hover { background: #e1306c; border-color: #e1306c; }
+.social-icon-btn.facebook:hover { background: #1877f2; border-color: #1877f2; }
+.social-icon-btn.whatsapp:hover { background: #25d366; border-color: #25d366; }
